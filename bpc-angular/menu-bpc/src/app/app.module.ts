@@ -8,10 +8,10 @@ import { HeroContentComponent } from './components/hero-content/hero-content.com
 import { OffertaSpecialeComponent } from './components/offerta-speciale/offerta-speciale.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MenuSectionComponent } from './components/menu-section/menu-section.component';
-import { DolciComponent } from './components/dolci/dolci.component';
-import { BevandeComponent } from './components/bevande/bevande.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './@shared/angular-material';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,14 @@ import { FooterComponent } from './components/footer/footer.component';
     OffertaSpecialeComponent,
     MenuComponent,
     MenuSectionComponent,
-    DolciComponent,
-    BevandeComponent,
     MenuItemComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularMaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
